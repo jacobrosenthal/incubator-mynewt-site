@@ -26,7 +26,7 @@ NimBLE supports features from older specifications including,
 * 32 bits UUID
 * L2CAP Connection Oriented Channels
 <br>
-
+
 ### Components
 
 A Bluetooth low energy stack (NimBLE included) consists of two components with several subcomponents:* **Controller**    * **Physical Layer**: adaptive frequency-hopping Gaussian Frequency Shift Keying (GFSK) radio using 40 RF channels (0-39), with 2 MHz spacing.    * **Link Layer**: with one of five states (Standby, Advertising, Scanning, Initiating, Connection states) active at any time    * **Host**    * **Logical Link Control and Adaptation Protocol (L2CAP)**: provides logical channels, named L2CAP channels, which are multiplexed over one or more logical links to provide packet segmentation and reassembly, flow control, error control, streaming, QoS etc.     * **Security Manager (SM)**: uses Security Manager Protocol (SMP) for pairing and transport specific key distribution for securing radio communication     * **Attribute protocol (ATT)**: allows a device (*Server*) to expose certain pieces of data, known as *Attributes*, to another device (*Client*)
